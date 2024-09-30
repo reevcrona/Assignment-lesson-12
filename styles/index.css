@@ -171,4 +171,7 @@ main{
         max-width: 265px;
         margin-top: 11px;
     }
+    main{
+        justify-content: space-betweens;
+    }
 }
