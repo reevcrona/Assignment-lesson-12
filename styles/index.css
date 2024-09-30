@@ -3,16 +3,34 @@ body{
     margin: 0;
     box-sizing: border-box;
     font-family: 'Source Sans Pro',sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
 }
 
 /*Header*/
+
+header{
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    padding-top: 12px;
+}
+
 .nav-logo{
     width: 90px;
     height: 36px;
 }
 .nav-list{
     display: flex;
-    gap: 20px;
+    gap: 28px;
+    margin: 0;
+    padding: 0;
 }
 .nav-li{
     list-style: none;
@@ -28,6 +46,23 @@ body{
 /*Header*/
 
 /*Main*/
+main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main-text-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 574px;
+    min-height: 198px;
+}
+
 .main-header{
     color: #242635;
     font-family: 'Poppins';
@@ -36,6 +71,8 @@ body{
     font-size: 90px;
     line-height: 102px;
     letter-spacing: -2px;
+    margin: 0;
+    margin-bottom: 30px;
 }
 .main-text{
     font-style: normal;
@@ -44,6 +81,22 @@ body{
     line-height: 33px;
     text-align: center;
     color: #242635;
+    margin: 0;
+    margin-bottom: 47px;
 }
+.image-container{
+    width: 100%;
+    max-width: 864px;
+    min-height: 486px;
+    background-image: url("/images/horse-img.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
+}
+.horse-img{
+    width: 100%;
+    min-height: 100%;
+
+}
 /*Main*/
