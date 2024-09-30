@@ -29,7 +29,6 @@ nav{
 .nav-logo{
     width: 90px;
     height: 36px;
-    
 }
 .nav-list{
     display: flex;
@@ -50,6 +49,11 @@ nav{
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
+}
+.nav-mobile-container{
+    display: none;
+    width:100%
+    
 }
 /*Header*/
 
@@ -101,6 +105,7 @@ main{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    padding: 10px;
 
 }
 .horse-img{
@@ -111,6 +116,59 @@ main{
 /*Main*/
 
 
-@media screen and  (max-width:768px){
-    
+@media screen and  (max-width:894px){
+    .main-header{
+        font-size: 72px;
+        line-height: 83px;
+        letter-spacing: -1.6px;
+    }
+    .main-text-container{
+        min-height: 171px;
+        margin-bottom: 45px;
+    }
+    .image-container{
+        max-width: 617px;
+        min-height: 512px;
+    }
+    header{
+        max-width: 617px;
+        margin-top: 34px;
+        padding: 0;
+    }
+}
+@media screen and  (max-width:645px){
+    body{
+        justify-content: start;
+    }
+    .main-header{
+        font-size: 36px;
+        line-height: 40px;
+        letter-spacing: -0.8px;
+    }
+    .main-text-container{
+        max-width: 217px;
+        min-height: 116px;
+        margin-bottom: 57px;
+        margin-top:64px;
+    }
+    .main-text{
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .image-container{
+        max-width: 265px;
+        min-height: 284px;
+    }
+    .nav-list{
+        display: none;
+    }
+    .nav-mobile-container{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+    header{
+        max-width: 265px;
+        margin-top: 11px;
+    }
 }
