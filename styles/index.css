@@ -126,10 +126,6 @@ main{
         min-height: 171px;
         margin-bottom: 45px;
     }
-    .image-container{
-        max-width: 617px;
-        min-height: 512px;
-    }
     header{
         max-width: 617px;
         margin-top: 34px;
@@ -154,10 +150,6 @@ main{
     .main-text{
         font-size: 12px;
         line-height: 18px;
-    }
-    .image-container{
-        max-width: 265px;
-        min-height: 284px;
     }
     .nav-list{
         display: none;
