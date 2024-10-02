@@ -20,7 +20,7 @@ body{
     justify-content: space-between;
     margin-top: 62px;
     grid-column: 2 / span 2;
-    
+    padding: 0 20px;
  }
 
 .nav-list{
@@ -39,7 +39,13 @@ body{
     line-height: 22px;
 }
 
-
+.mobile-nav-icon{
+    display: none;
+}
+.nav-logo{
+    width: 90px;
+    min-height: 36px;
+}
 /*Header*/
 
 
@@ -50,6 +56,7 @@ main{
     justify-content: space-between;
     align-items: center;
     grid-column: 2 / span 8;
+    padding: 0 20px;
     
 }
 .main-text-container{
@@ -82,16 +89,17 @@ main{
 }
 
 
-@media screen and  (max-width:1102px){
+@media screen and  (max-width:1122px){
     body{
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
     }
     main{
         flex-wrap: wrap;
         justify-content: center;
+        margin-top: 100px;
     }
     header{
         max-width: 617px;
@@ -100,6 +108,7 @@ main{
         max-width: 574px;
         min-height: 172px;
         margin-bottom: 45px;
+        
     }
     .main-header{
         font-size: 72px;
@@ -113,6 +122,38 @@ main{
         line-height: 33px;
         text-align: center;
         color: #FFFFFF;
+    }
+
+}
+@media screen and  (max-width:637px){
+    
+    main{
+        flex-wrap: nowrap;
+        justify-content: center;
+        flex-direction: column;
+    }
+    header{
+        max-width: 230px;
+    }
+    .mobile-nav-icon{
+        display: block;
+    }
+    .nav-list{
+        display: none;
+    }
+    .main-text-container{
+        max-width: 211px;
+        min-height: 104px;
+        margin-bottom: 45px;
+    }
+    .main-header{
+        font-size: 36px;
+        line-height: 40px;
+        letter-spacing: -0.8px;
+    }
+    .main-text{
+        font-size: 12px;
+        line-height: 18px;
     }
 
 }

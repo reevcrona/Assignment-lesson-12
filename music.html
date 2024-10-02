@@ -15,13 +15,18 @@
 
     
     <header>
-        <img src="images/dark-logo.svg" alt="Nav logo">
+        <picture>
+            <source media="(max-width:1121px)" srcset="/images/mobile-dark-logo.svg">
+            <img src="images/dark-logo.svg" alt="Nav logo">
+        </picture>
+        
         <nav>
         <ul class="nav-list">
             <li class="nav-li"><a class="nav-link" href="#">Works</a></li>
             <li class="nav-li"><a class="nav-link" href="#">Services</a></li>
             <li class="nav-li"><a class="nav-link" href="#">Contacts</a></li>
         </ul>
+        <img class="mobile-nav-icon" src="images/Icon.svg" alt="Navigation icon">
     </nav>
     </header>
     
@@ -33,7 +38,8 @@
 
         
             <picture>
-                <source media="(max-width:1102px)" srcset="/images/slider-m.png">
+                <source media="(max-width:637px)" srcset="/images/slider-s.png">
+                <source media="(max-width:1121px)" srcset="/images/slider-m.png">
             <img src="images/Slider.jpg" alt="Headshot image" class="main-image">
             </picture>
         
